@@ -4,12 +4,16 @@ using UnityEngine.InputSystem;
 
 public class Pause : MonoBehaviour
 {
+
     [SerializeField] private GameObject pauseMenu;
     private bool isPaused = false;
-    public void onPause(InputValue value)
+
+    public void OnPause(InputValue value)
     {
         if (value.isPressed)
+        {
             TogglePause();
+        }
     }
 
     public void TogglePause()
@@ -18,14 +22,13 @@ public class Pause : MonoBehaviour
 
         if (isPaused)
         {
-            Time.timeScale = 0;
-            pauseMenu.SetActive(true);
+            Time.timeScale = 0f;          
+            pauseMenu.SetActive(true); 
         }
-        else 
+        else
         {
-            Time.timeScale = 1f;
-            pauseMenu.SetActive(false);
+            Time.timeScale = 1f;          
+            pauseMenu.SetActive(false); 
         }
-    
+        }
     }
-}
