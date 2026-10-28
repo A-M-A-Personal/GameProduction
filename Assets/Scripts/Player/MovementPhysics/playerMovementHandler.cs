@@ -5,16 +5,16 @@ using UnityEngine.InputSystem;
 public class playerMovementHandler : MonoBehaviour
 {
     //Various numbers
-    private float spiderMovespeedMultiplier = 200f, spiderTurnSpeedMultiplier = 500f, smoothTime = 5f, fallspeed = 10f;
+    private float spiderMovespeedMultiplier = 300f, spiderTurnSpeedMultiplier = 300f, smoothTime = 5f, fallspeed = 10f;
     //Physic thingies
     private bool crash;
     [SerializeField] private Transform GameObject;
     private Rigidbody rb;
     //Movement and imput stuff    
-    private Vector2 turning;
+    private Vector2 turning, tilting;
     private Vector3 spiderInfo;
     private quaternion targetRot;
-    private SpiderTank moveAction, turn, jump;
+    private SpiderTank moveAction;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -85,21 +85,24 @@ public class playerMovementHandler : MonoBehaviour
 
         if (!(turning.x == 0))
         {
-            Debug.Log(turning.ToString());
-            rb.AddTorque(Vector3.up * spiderTurnSpeedMultiplier * turning.x * Time.deltaTime);
+            //Debug.Log("X:" + turning.x);
+            rb.AddRelativeTorque(Vector3.up * spiderTurnSpeedMultiplier * turning.x * Time.deltaTime);
         }
-
-        //Floor distance setter
-        if (!crash)
+        if (!(turning.y == 0))
+        {
+            //Debug.Log("Y:" + turning.y);
+            rb.AddRelativeTorque(-Vector3.right * spiderTurnSpeedMultiplier * turning.y * Time.deltaTime);
+        }
+        else if (!crash)
         {
             targetRot = Quaternion.Euler(0, GameObject.transform.rotation.eulerAngles.y, 0);
             transform.rotation = Quaternion.Lerp(transform.rotation, targetRot, smoothTime * Time.deltaTime);
         }
 
-
-        if (Physics.Raycast(transform.position, -transform.up, out RaycastHit hit, 4f))
+        //Floor distance setter
+        if (Physics.Raycast(transform.position, -transform.up, out RaycastHit hit, 10f))
         {
-            if (spiderTurnSpeedMultiplier == 0f) { spiderMovespeedMultiplier = 200f; spiderTurnSpeedMultiplier = 200f; }
+            if (spiderTurnSpeedMultiplier == 0f) { spiderMovespeedMultiplier = 300f; spiderTurnSpeedMultiplier = 300f; }
             Vector3 position = hit.point;
             //shoot a raycast up from that position towards the object
             Ray upRay = new Ray(position, transform.position - position);
