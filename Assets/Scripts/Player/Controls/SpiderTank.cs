@@ -169,7 +169,7 @@ public partial class @SpiderTank: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""2D Vector"",
-                    ""id"": ""9ee82235-5f70-496c-8c22-0864b6eca965"",
+                    ""id"": ""a8aa587f-66e5-46a8-a1d3-4434087da475"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -179,9 +179,31 @@ public partial class @SpiderTank: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
+                    ""name"": ""up"",
+                    ""id"": ""7940e935-5b99-4e4f-ab83-9af3c5ea1fc1"",
+                    ""path"": ""<Mouse>/delta/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""TurningFace"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""9a0daf67-5347-41c6-b789-03b0345ab86e"",
+                    ""path"": ""<Mouse>/delta/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""TurningFace"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
                     ""name"": ""left"",
-                    ""id"": ""58c3f966-5b69-4057-9f0f-d8b9c1100791"",
-                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""id"": ""e26f452a-f6ea-428e-bdf0-9cff75dc578c"",
+                    ""path"": ""<Mouse>/delta/left"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -191,8 +213,8 @@ public partial class @SpiderTank: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""right"",
-                    ""id"": ""a962c462-4a0e-40ab-af50-23762509807e"",
-                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""id"": ""41e3dc2e-910f-4a2f-aa2e-7c99aac9ea20"",
+                    ""path"": ""<Mouse>/delta/right"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
