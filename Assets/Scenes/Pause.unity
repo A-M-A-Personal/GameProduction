@@ -14,6 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
+<<<<<<< HEAD
   m_Fog: 1
   m_FogColor: {r: 0.2981131, g: 0.062435012, b: 0.062435012, a: 1}
   m_FogMode: 2
@@ -26,6 +27,20 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0, g: 0, b: 0, a: 0}
+=======
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+>>>>>>> UIDesign
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -35,9 +50,15 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
+<<<<<<< HEAD
   m_ReflectionIntensity: 0
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1406571151}
+=======
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+>>>>>>> UIDesign
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -93,8 +114,13 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
+<<<<<<< HEAD
   m_LightingDataAsset: {fileID: 112000000, guid: f412213f60da40745b7c170b521da9f6, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: b62a7f23385eb424ead187cec84969bb, type: 2}
+=======
+  m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightingSettings: {fileID: 0}
+>>>>>>> UIDesign
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -120,6 +146,9 @@ NavMeshSettings:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> UIDesign
 --- !u!1 &2655043
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,6 +245,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 179064247}
+<<<<<<< HEAD
+=======
+  - {fileID: 491783928}
+  - {fileID: 1197584842}
+  - {fileID: 788145425}
+>>>>>>> UIDesign
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -301,6 +336,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 179064246}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 =======
 >>>>>>> LevelModelsAndSpawning
 --- !u!1 &247630462
@@ -773,6 +809,8 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+=======
+>>>>>>> UIDesign
 --- !u!1 &491783926
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,12 +836,21 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491783926}
   serializedVersion: 2
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 401.5521, y: 224.41292, z: 36.53439}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+=======
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -142.6979, y: -18.212082, z: 36.53439}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2655047}
+>>>>>>> UIDesign
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &491783929
 MonoBehaviour:
@@ -817,6 +864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8701164f0aa82cf4893e2e5a13f614c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Play
+<<<<<<< HEAD
 --- !u!1001 &760889164
 =======
 --- !u!1001 &793579324
@@ -964,6 +1012,8 @@ PrefabInstance:
       addedObject: {fileID: 2749945919200301464}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e018552271887b94e9e8660e503f1f0a, type: 3}
+=======
+>>>>>>> UIDesign
 --- !u!1 &788145423
 GameObject:
   m_ObjectHideFlags: 0
@@ -1003,12 +1053,21 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 788145423}
   serializedVersion: 2
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 337.00186, y: -0, z: 839.28174}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+=======
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -207.24814, y: -242.625, z: 839.28174}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2655047}
+>>>>>>> UIDesign
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &788145426
 MonoBehaviour:
@@ -1185,6 +1244,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 831534448}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 =======
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5797989674195063420, guid: 5210338e34685984c9c47ccb86c8547a, type: 3}
@@ -1246,6 +1306,9 @@ Transform:
 =======
 --- !u!1 &962868240
 >>>>>>> LevelModelsAndSpawning
+=======
+--- !u!1 &856035874
+>>>>>>> UIDesign
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1254,12 +1317,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> UIDesign
   - component: {fileID: 856035875}
   - component: {fileID: 856035877}
   - component: {fileID: 856035876}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
+<<<<<<< HEAD
 =======
   - component: {fileID: 962868244}
   - component: {fileID: 962868243}
@@ -1268,10 +1335,13 @@ GameObject:
   m_Layer: 0
   m_Name: HealthBall (3)
   m_TagString: NeedleTarget
+=======
+>>>>>>> UIDesign
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!135 &962868241
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1476,11 +1546,18 @@ RectTransform:
 --- !u!135 &1137676596
 SphereCollider:
 >>>>>>> LevelModelsAndSpawning
+=======
+--- !u!224 &856035875
+RectTransform:
+>>>>>>> UIDesign
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> UIDesign
   m_GameObject: {fileID: 856035874}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -1495,6 +1572,7 @@ SphereCollider:
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &856035876
+<<<<<<< HEAD
 =======
   m_GameObject: {fileID: 1137676595}
   m_Material: {fileID: 0}
@@ -1623,11 +1701,14 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1406571150
 >>>>>>> LevelModelsAndSpawning
+=======
+>>>>>>> UIDesign
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 856035874}
 =======
@@ -1638,6 +1719,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
 <<<<<<< HEAD
+=======
+  m_GameObject: {fileID: 856035874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+>>>>>>> UIDesign
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1721,6 +1809,7 @@ MonoBehaviour:
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &856035877
 CanvasRenderer:
+<<<<<<< HEAD
 =======
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
   m_UsePipelineSettings: 1
@@ -1743,10 +1832,13 @@ CanvasRenderer:
 --- !u!108 &1406571151
 Light:
 >>>>>>> LevelModelsAndSpawning
+=======
+>>>>>>> UIDesign
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 856035874}
   m_CullTransparentMesh: 1
@@ -1926,6 +2018,10 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2db2b4e8f20610b4084f30e8c30d88f5, type: 3}
+=======
+  m_GameObject: {fileID: 856035874}
+  m_CullTransparentMesh: 1
+>>>>>>> UIDesign
 --- !u!1 &1197584840
 GameObject:
   m_ObjectHideFlags: 0
@@ -1963,6 +2059,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1197584840}
   serializedVersion: 2
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 506.35886, y: -0, z: 876.58905}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -1975,6 +2072,15 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e018552271887b94e9e8660e503f1f0a, type: 3}
   m_PrefabInstance: {fileID: 763077813}
   m_PrefabAsset: {fileID: 0}
+=======
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -37.891144, y: -242.625, z: 876.58905}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2655047}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> UIDesign
 --- !u!1 &1414195051
 GameObject:
   m_ObjectHideFlags: 0
@@ -2120,6 +2226,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1414195051}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 =======
     - target: {fileID: 974326805433038029, guid: 5210338e34685984c9c47ccb86c8547a, type: 3}
       propertyPath: m_Name
@@ -2338,6 +2445,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2015266139
 >>>>>>> LevelModelsAndSpawning
+=======
+--- !u!1 &2008747363
+>>>>>>> UIDesign
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2346,12 +2456,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> UIDesign
   - component: {fileID: 2008747364}
   - component: {fileID: 2008747366}
   - component: {fileID: 2008747365}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
+<<<<<<< HEAD
 =======
   - component: {fileID: 2015266143}
   - component: {fileID: 2015266142}
@@ -2361,20 +2475,28 @@ GameObject:
   m_Name: HealthBall (1)
   m_TagString: NeedleTarget
 >>>>>>> LevelModelsAndSpawning
+=======
+>>>>>>> UIDesign
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!224 &2008747364
 RectTransform:
 =======
 --- !u!135 &2015266140
 SphereCollider:
+=======
+--- !u!224 &2008747364
+RectTransform:
+>>>>>>> UIDesign
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 2015266139}
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -2398,6 +2520,8 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+=======
+>>>>>>> UIDesign
   m_GameObject: {fileID: 2008747363}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -2648,6 +2772,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067086715}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 =======
   m_GameObject: {fileID: 2015266139}
   m_Enabled: 1
@@ -11737,10 +11862,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+=======
+>>>>>>> UIDesign
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+<<<<<<< HEAD
   - {fileID: 832575519}
   - {fileID: 247630465}
   - {fileID: 5914695052772727323}
@@ -11774,3 +11902,6 @@ SceneRoots:
   - {fileID: 348915292}
   - {fileID: 962868244}
 >>>>>>> LevelModelsAndSpawning
+=======
+  - {fileID: 2655047}
+>>>>>>> UIDesign
