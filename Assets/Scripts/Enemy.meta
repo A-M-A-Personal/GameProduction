@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 1b1edf260d3cacc40bd37d05cd6d2bfc
+=======
+guid: db822def76b48554b9471b853b33e898
+>>>>>>> origin/UIDesign
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
