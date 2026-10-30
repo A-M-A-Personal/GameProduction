@@ -36,7 +36,7 @@ public class Spawning : MonoBehaviour
         while (running)
         {
             if (Stats.health == 0) { running = false;  yield break; }
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(2f);
             spawnRange = Random.Range(-spawnLimit, spawnLimit);
             GameObject _newSpawn = Instantiate(objectsList[Random.Range(0, objectsList.Count)]) as GameObject;
             var _location = spawnList[Random.Range(0, spawnList.Count)];

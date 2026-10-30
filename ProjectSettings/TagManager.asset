@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CystSpawn
   - NeedleTarget
+  - DeadEnd
   layers:
   - Default
   - TransparentFX

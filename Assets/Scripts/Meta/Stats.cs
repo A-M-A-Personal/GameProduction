@@ -17,10 +17,11 @@ public class Stats : MonoBehaviour
 
     private void Update()
     {
-        if (health == 0)
+        if (health == 0 || needleHealth ==0)
         {
-            //SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene("Menu");
         }
+
     }
 
     public void chargeUsed()

@@ -5,16 +5,17 @@ using UnityEngine.InputSystem;
 public class playerMovementHandler : MonoBehaviour
 {
     //Various numbers
-    private float spiderMovespeedMultiplier = 300f, spiderTurnSpeedMultiplier = 300f, smoothTime = 5f, fallspeed = 10f;
+    private float spiderMovespeedMultiplier = 200f, spiderTurnSpeedMultiplier = 400f, smoothTime = 5f, fallspeed = 10f;
     //Physic thingies
     private bool crash;
     [SerializeField] private Transform GameObject;
     private Rigidbody rb;
     //Movement and imput stuff    
-    private Vector2 turning, tilting;
+    private Vector2 turning;
     private Vector3 spiderInfo;
     private quaternion targetRot;
     private SpiderTank moveAction;
+    [SerializeField] private PlayerNoises noises;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -43,12 +44,14 @@ public class playerMovementHandler : MonoBehaviour
     private void onSpiderStop(InputAction.CallbackContext context)
     {
         //Sets Vector3 to zero to stop movement
+        if (!crash) noises.LoopWalking(false);
         spiderInfo = Vector3.zero;
     }
 
     private void onSpiderMove(InputAction.CallbackContext context)
     {
         //Set Vector3 to relevent direction based on input
+        if (!crash) noises.LoopWalking(true);
         spiderInfo = context.ReadValue<Vector3>();
     }
 
@@ -102,7 +105,7 @@ public class playerMovementHandler : MonoBehaviour
         //Floor distance setter
         if (Physics.Raycast(transform.position, -transform.up, out RaycastHit hit, 10f))
         {
-            if (spiderTurnSpeedMultiplier == 0f) { spiderMovespeedMultiplier = 300f; spiderTurnSpeedMultiplier = 300f; }
+            if (spiderTurnSpeedMultiplier == 0f) { spiderMovespeedMultiplier = 200f; spiderTurnSpeedMultiplier = 400f; }
             Vector3 position = hit.point;
             //shoot a raycast up from that position towards the object
             Ray upRay = new Ray(position, transform.position - position);

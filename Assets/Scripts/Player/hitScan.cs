@@ -1,8 +1,10 @@
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class hitScan : MonoBehaviour
 {
+    [SerializeField] private PlayerNoises noises;
     private InputAction leftMouseClick;
     [SerializeField] private Stats stats;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -23,6 +25,7 @@ public class hitScan : MonoBehaviour
     {
         if (Stats.charge != 0)
         {
+            noises.PlayShooting();
             Stats.charge--;
             stats.chargeUsed();
             print("LeftMouseClicked");
@@ -39,7 +42,7 @@ public class hitScan : MonoBehaviour
         }
         else
         {
-            Debug.Log("Out of Ammo!");
+            noises.PlayOutOfAmmo();
         }
     }
 
