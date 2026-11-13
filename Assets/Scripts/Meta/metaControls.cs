@@ -5,6 +5,7 @@ using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
 
 public class metaControls : MonoBehaviour
 {
+    [SerializeField] private Pause pause;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,13 +17,8 @@ public class metaControls : MonoBehaviour
     {
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            print("Exiting");
-            doExitGame();
+            pause.TogglePause();
         }
-    }
-    void doExitGame()
-    {
-        Application.Quit();
     }
 
 }

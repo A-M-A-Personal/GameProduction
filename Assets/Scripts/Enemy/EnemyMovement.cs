@@ -6,7 +6,7 @@ public class EnemyMovement : MonoBehaviour
     protected float smoothTime = 5f, fallspeed = 10f;
     protected NavMeshAgent navagent;
     protected Transform playerTransform;
-    [SerializeField] protected float Movespeed = 25f;
+    [SerializeField] protected float Movespeed;
     [SerializeField] protected Transform self;
     protected Rigidbody rb;
     protected virtual void Start()
@@ -45,6 +45,14 @@ public class EnemyMovement : MonoBehaviour
             {
                 rb.AddForce(-transform.up * fallspeed);
             }
+        }
+    }
+
+    protected virtual void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag == "DeadEnd")
+        {
+            Destroy(gameObject);
         }
     }
 }
