@@ -51,8 +51,8 @@ public class EnemyMovement : MonoBehaviour
     protected virtual void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.tag == "DeadEnd")
-        {
+       {
             Destroy(gameObject);
-        }
-    }
+       }
+   }
 }
