@@ -48,4 +48,17 @@ public class Stats : MonoBehaviour
             }
         }
     }
+
+    public void DevSetHealthToOne()
+    {
+        health = 1;
+    }
+    public void DevSetHealthToTwo()
+    {
+        health = 2;
+    }
+    public void DevSetHealthToThree()
+    {
+        health = 3;
+    }
 }
