@@ -669,6 +669,7 @@ GameObject:
   - component: {fileID: 605656380}
   - component: {fileID: 605656382}
   - component: {fileID: 605656381}
+  - component: {fileID: 605656383}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -785,6 +786,19 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &605656383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605656379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3789e1dc2ae8fc4aacc7d5620339b2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthDisplay
+  lightObject: {fileID: 605656379}
 --- !u!1001 &793579324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1756,6 +1770,7 @@ GameObject:
   - component: {fileID: 1964602100}
   - component: {fileID: 1964602102}
   - component: {fileID: 1964602103}
+  - component: {fileID: 1964602104}
   m_Layer: 0
   m_Name: Meta
   m_TagString: Untagged
@@ -1869,6 +1884,20 @@ MonoBehaviour:
   - {fileID: 1273803662}
   - {fileID: 1989507430}
   - {fileID: 2129247448}
+--- !u!114 &1964602104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964602097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df14e24263b6f5443859d25e50abcdfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CurserManager
+  cursorTextureDefault: {fileID: 2800000, guid: 608bd2265d91d2d4286b68f1ed349fdc, type: 3}
+  clickPosition: {x: 0.5, y: 0.5}
 --- !u!4 &1989507430 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4696973913238409920, guid: 5210338e34685984c9c47ccb86c8547a, type: 3}
