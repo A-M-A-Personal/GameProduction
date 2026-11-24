@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class playerMovementHandler : MonoBehaviour
 {
     //Various numbers
-    private float spiderMovespeedMultiplier = 200f, spiderTurnSpeedMultiplier = 400f, smoothTime = 5f, fallspeed = 10f;
+    private float spiderMovespeedMultiplier = 100f, spiderTurnSpeedMultiplier = 400f, smoothTime = 5f, fallspeed = 10f;
     //Physic thingies
     private bool crash;
     [SerializeField] private Transform GameObject;
@@ -105,7 +105,7 @@ public class playerMovementHandler : MonoBehaviour
         //Floor distance setter
         if (Physics.Raycast(transform.position, -transform.up, out RaycastHit hit, 10f))
         {
-            if (spiderTurnSpeedMultiplier == 0f) { spiderMovespeedMultiplier = 200f; spiderTurnSpeedMultiplier = 400f; }
+            if (spiderTurnSpeedMultiplier == 0f) { spiderMovespeedMultiplier = 100f; spiderTurnSpeedMultiplier = 400f; }
             Vector3 position = hit.point;
             //shoot a raycast up from that position towards the object
             Ray upRay = new Ray(position, transform.position - position);

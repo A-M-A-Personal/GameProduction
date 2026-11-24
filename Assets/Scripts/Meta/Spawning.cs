@@ -7,7 +7,7 @@ using static UnityEngine.Rendering.DebugUI;
 public class Spawning : MonoBehaviour
 {
     private bool running = false;
-    [SerializeField] private float spawnRange = 50f, spawnLimit = 45.0f;
+    [SerializeField] private float spawnRange = 0, spawnLimit = 0;
     [SerializeField] private GameObject gameobject;
     public static List<GameObject> objectsList = new List<GameObject>();
     [SerializeField] private List<Transform> spawnList = new List<Transform>();
@@ -36,7 +36,7 @@ public class Spawning : MonoBehaviour
         while (running)
         {
             if (Stats.health == 0) { running = false;  yield break; }
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(10f);
             spawnRange = Random.Range(-spawnLimit, spawnLimit);
             GameObject _newSpawn = Instantiate(objectsList[Random.Range(0, objectsList.Count)]) as GameObject;
             var _location = spawnList[Random.Range(0, spawnList.Count)];

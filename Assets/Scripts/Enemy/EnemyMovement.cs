@@ -54,5 +54,16 @@ public class EnemyMovement : MonoBehaviour
        {
             Destroy(gameObject);
        }
-   }
+        if (col.gameObject.tag == "NeedleTarget")
+        {
+            Debug.Log("DetectionM Needle");
+            Stats.health--;
+            Destroy(gameObject);
+        }
+        if (col.gameObject.tag == "Player")
+        {
+            Stats.health--;
+            Destroy(gameObject);
+        }
+    }
 }

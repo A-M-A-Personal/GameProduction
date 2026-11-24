@@ -1,0 +1,55 @@
+{
+    "version": 1,
+    "name": "LevelInputs",
+    "maps": [
+        {
+            "name": "clicked",
+            "id": "41a8fcd1-ebf2-484c-b643-e49d4b13d66f",
+            "actions": [
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "b10db7ee-2025-46f1-8e96-0d8d6b53a5bf",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MouseLocation",
+                    "type": "Value",
+                    "id": "e54ee9c4-bc88-4c5d-ac33-f0b705c3c25b",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "64d4d0cf-0f82-47ce-9fb0-c94fda55e28c",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "018d5e6f-bacc-4388-a3c5-97c7608451a9",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MouseLocation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

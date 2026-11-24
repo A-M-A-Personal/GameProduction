@@ -17,16 +17,7 @@ public class Blob : EnemyMovement
     protected override void OnCollisionEnter(Collision col)
     {
         base.OnCollisionEnter(col);
-        if (col.gameObject.tag == "NeedleTarget")
-        {
-            Stats.needleHealth--;
-            Destroy(gameObject);
-        }
-        if (col.gameObject.tag == "Player")
-        {
-            Stats.health--;
-            Destroy(gameObject);
-        }
+        
 
     }
 }
